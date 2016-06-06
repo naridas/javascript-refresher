@@ -4,19 +4,24 @@ var selectElementsStartingWithA = function(array) {
   }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var filtered = array.filter(function(word) {return word.match(/^[aeiou]/)})
+  return filtered
 }
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
+  var filtered = array.filter(function(word) {return word !== null})
+  return filtered
 }
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+  var filtered = array.filter(function(word) {return word !== null && word !== false})
+  return filtered
 }
 
 var reverseWordsInArray = function(array) {
-  return 'Write your method here';
+  var reversed = []
+  array.forEach(function(word){ reversed.push(word.split("").reverse().join("")) })
+  return reversed
 }
 
 var everyPossiblePair = function(array) {
