@@ -4,7 +4,8 @@ var selectElementsStartingWithA = function(array) {
   }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var filtered = array.filter( function(word) {return word.match(/^[aeiou]/)})
+  return filtered
 }
 
 var removeNullElements = function(array) {
