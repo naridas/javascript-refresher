@@ -25,11 +25,17 @@ var reverseWordsInArray = function(array) {
 }
 
 var everyPossiblePair = function(array) {
-  return 'Write your method here';
+  var arysorted = array.sort()
+  var res = [],
+      l = array.length;
+  for(var i=0; i<l; i++)
+      for(var j=i+1; j<l; j++)
+          res.push([arysorted[i], arysorted[j]]);
+  return res;
 }
 
 var allElementsExceptFirstThree = function(array) {
-  return 'Write your method here';
+  return array.slice(3)
 }
 
 var addElementToBeginning = function(array, element) {
